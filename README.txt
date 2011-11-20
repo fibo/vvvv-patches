@@ -1,7 +1,27 @@
 VVVV Patches
 ============
 
-For info on VVVV, point your browser to http://vvvv.org
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+If you don't know VVVV, point your browser to http://vvvv.org
+
+ - Get a VVVV account
+
+ - Read the license, http://vvvv.org/licensing
+
+ - Install it! http://vvvv.org/downloads
+
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+If you know VVVV but you don't know github https://github.com/
+
+ - Get a github account
+
+ - Explore the patches
+
+ - Open file "How to add patches.v4p"
+
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
 Contributing
 ============
