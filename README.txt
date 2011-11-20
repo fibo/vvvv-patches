@@ -1,7 +1,7 @@
 VVVV Patches
 ============
 
-vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
 If you don't know VVVV, point your browser to http://vvvv.org
 
@@ -11,7 +11,7 @@ If you don't know VVVV, point your browser to http://vvvv.org
 
  - Install it! http://vvvv.org/downloads
 
-vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
 If you know VVVV but you don't know github https://github.com/
 
@@ -21,7 +21,7 @@ If you know VVVV but you don't know github https://github.com/
 
  - Open file "How to add patches.v4p"
 
-vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
 Contributing
 ============
@@ -30,6 +30,5 @@ Fork me on github !
 
     https://github.com/fibo/vvvv-patches
 
-Please create a branch named like your vvvv nickname, so you can commit and do whatever you want, 
+Please create a branch named like your vvvv nickname, so you can commit and do whatever you want, then do a pull request to the master branch.
 
-then do a pull request to the master branch.
