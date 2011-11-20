@@ -32,3 +32,8 @@ Fork me on github !
 
 Please create a branch named like your vvvv nickname, so you can commit and do whatever you want, then do a pull request to the master branch.
 
++ Contributors:
+  - fibo
+  - desaxismundi
+  - kalle
+
