@@ -9,13 +9,13 @@
    </PIN>
    <PIN pinname="Do Execute" visible="1">
    </PIN>
-   <PIN pinname="Show Window" slicecount="1" visible="-1" pintype="Input" values="1">
+   <PIN pinname="Show Window" pintype="Input" slicecount="1" visible="-1" values="1">
    </PIN>
-   <PIN pinname="Block until finished" slicecount="1" visible="-1" pintype="Input" values="0">
+   <PIN pinname="Block until finished" pintype="Input" slicecount="1" visible="-1" values="0">
    </PIN>
-   <PIN encoded="0" pinname="Commandline Arguments" slicecount="1" visible="-1" pintype="Input" values="|git push -u origin master|">
+   <PIN encoded="0" pinname="Commandline Arguments" pintype="Input" slicecount="1" visible="-1" values="|git push -u origin master|">
    </PIN>
-   <PIN pinname="Result" visible="-1" pintype="Output">
+   <PIN pinname="Result" pintype="Output" visible="-1">
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="1" nodename="IOBox (String)" systemname="IOBox (String)">
@@ -25,7 +25,7 @@
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="-1" pintype="Input" values=".\do.sh">
+   <PIN encoded="0" pinname="Input String" pintype="Input" slicecount="1" visible="-1" values=".\do.sh">
    </PIN>
    <PIN pinname="Pin Visibility" slicecount="1" values="False">
    </PIN>
@@ -47,7 +47,7 @@
    </PIN>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Push" encoded="0">
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Push">
    </PIN>
    </NODE>
    <LINK dstnodeid="0" dstpinname="Do Execute" srcnodeid="2" srcpinname="Y Output Value">
@@ -59,32 +59,32 @@
    </PIN>
    <PIN pinname="Do Execute" visible="1">
    </PIN>
-   <PIN pinname="Show Window" slicecount="1" visible="-1" pintype="Input" values="1">
+   <PIN pinname="Show Window" pintype="Input" slicecount="1" visible="-1" values="1">
    </PIN>
-   <PIN pinname="Block until finished" slicecount="1" visible="-1" pintype="Input" values="0">
+   <PIN pinname="Block until finished" pintype="Input" slicecount="1" visible="-1" values="0">
    </PIN>
-   <PIN encoded="0" pinname="Commandline Arguments" slicecount="1" visible="-1" pintype="Input" values="|git add .|">
+   <PIN encoded="0" pinname="Commandline Arguments" pintype="Input" slicecount="1" visible="-1" values="|git add .|">
    </PIN>
-   <PIN pinname="Result" visible="-1" pintype="Output">
+   <PIN pinname="Result" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="4">
-   <BOUNDS type="Node" left="5175" top="885" width="100" height="100">
+   <NODE componentmode="InABox" id="4" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="5175" top="885" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5175" top="885" width="480" height="480">
+   <BOUNDS height="480" left="5175" top="885" type="Box" width="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Add" encoded="0">
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Add">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Do Execute">
+   <LINK dstnodeid="3" dstpinname="Do Execute" srcnodeid="4" srcpinname="Y Output Value">
    </LINK>
-   <LINK srcnodeid="1" srcpinname="Output String" dstnodeid="3" dstpinname="File">
+   <LINK dstnodeid="3" dstpinname="File" srcnodeid="1" srcpinname="Output String">
    </LINK>
    <NODE componentmode="Hidden" id="6" nodename="ShellExecute (Windows)" systemname="ShellExecute (Windows)">
    <BOUNDS height="100" left="5595" top="3960" type="Node" width="100">
@@ -93,32 +93,32 @@
    </PIN>
    <PIN pinname="Do Execute" visible="1">
    </PIN>
-   <PIN pinname="Show Window" slicecount="1" visible="-1" pintype="Input" values="1">
+   <PIN pinname="Show Window" pintype="Input" slicecount="1" visible="-1" values="1">
    </PIN>
-   <PIN pinname="Block until finished" slicecount="1" visible="-1" pintype="Input" values="0">
+   <PIN pinname="Block until finished" pintype="Input" slicecount="1" visible="-1" values="0">
    </PIN>
-   <PIN encoded="0" pinname="Commandline Arguments" slicecount="1" visible="-1" pintype="Input" values="|git commit|">
+   <PIN encoded="0" pinname="Commandline Arguments" pintype="Input" slicecount="1" visible="-1" values="|git commit|">
    </PIN>
-   <PIN pinname="Result" visible="-1" pintype="Output">
+   <PIN pinname="Result" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="5">
-   <BOUNDS type="Node" left="6780" top="1635" width="100" height="100">
+   <NODE componentmode="InABox" id="5" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="6780" top="1635" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6780" top="1635" width="480" height="480">
+   <BOUNDS height="480" left="6780" top="1635" type="Box" width="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Commit">
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Commit">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Do Execute">
+   <LINK dstnodeid="6" dstpinname="Do Execute" srcnodeid="5" srcpinname="Y Output Value">
    </LINK>
-   <LINK srcnodeid="1" srcpinname="Output String" dstnodeid="6" dstpinname="File">
+   <LINK dstnodeid="6" dstpinname="File" srcnodeid="1" srcpinname="Output String">
    </LINK>
    <NODE componentmode="Hidden" id="8" nodename="ShellExecute (Windows)" systemname="ShellExecute (Windows)">
    <BOUNDS height="100" left="7035" top="3945" type="Node" width="100">
@@ -127,33 +127,73 @@
    </PIN>
    <PIN pinname="Do Execute" visible="1">
    </PIN>
-   <PIN pinname="Show Window" slicecount="1" visible="-1" pintype="Input" values="1">
+   <PIN pinname="Show Window" pintype="Input" slicecount="1" visible="-1" values="1">
    </PIN>
-   <PIN pinname="Block until finished" slicecount="1" visible="-1" pintype="Input" values="0">
+   <PIN pinname="Block until finished" pintype="Input" slicecount="1" visible="-1" values="0">
    </PIN>
-   <PIN encoded="0" pinname="Commandline Arguments" slicecount="1" visible="-1" pintype="Input" values="|git init|">
+   <PIN encoded="0" pinname="Commandline Arguments" pintype="Input" slicecount="1" visible="-1" values="|git init|">
    </PIN>
-   <PIN pinname="Result" visible="-1" pintype="Output">
+   <PIN pinname="Result" pintype="Output" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="7">
-   <BOUNDS type="Node" left="8220" top="1620" width="100" height="100">
+   <NODE componentmode="InABox" id="7" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="8220" top="1620" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="8220" top="1620" width="480" height="480">
+   <BOUNDS height="480" left="8220" top="1620" type="Box" width="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Init">
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Init">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    <PIN pinname="Pin Visibility" slicecount="1" values="Hidden">
    </PIN>
    </NODE>
-   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Do Execute">
+   <LINK dstnodeid="8" dstpinname="Do Execute" srcnodeid="7" srcpinname="Y Output Value">
    </LINK>
-   <LINK srcnodeid="1" srcpinname="Output String" dstnodeid="8" dstpinname="File">
+   <LINK dstnodeid="8" dstpinname="File" srcnodeid="1" srcpinname="Output String">
+   </LINK>
+   <NODE componentmode="Hidden" id="12" nodename="ShellExecute (Windows)" systemname="ShellExecute (Windows)">
+   <BOUNDS height="100" left="8610" top="4080" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="File" visible="1">
+   </PIN>
+   <PIN pinname="Do Execute" visible="1">
+   </PIN>
+   <PIN pinname="Show Window" pintype="Input" slicecount="1" visible="-1" values="1">
+   </PIN>
+   <PIN pinname="Block until finished" pintype="Input" slicecount="1" visible="-1" values="0">
+   </PIN>
+   <PIN encoded="0" pinname="Commandline Arguments" pintype="Input" slicecount="1" visible="-1" values="sh">
+   </PIN>
+   <PIN pinname="Result" pintype="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="11" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="9465" top="1830" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="480" left="9465" top="1830" type="Box" width="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Shell">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="Hidden">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="12" dstpinname="Do Execute" srcnodeid="11" srcpinname="Y Output Value">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output String" dstnodeid="12" dstpinname="File">
    </LINK>
    </PATCH>
