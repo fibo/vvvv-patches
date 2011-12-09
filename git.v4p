@@ -1,0 +1,49 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta26.dtd" >
+   <PATCH nodename="C:\_github\vvvv-patches\git.v4p" filename="C:\_github\vvvv-patches\git.v4p" systemname="git">
+   <BOUNDS height="6000" left="510" top="2910" type="Window" width="9000">
+   </BOUNDS>
+   <NODE componentmode="Hidden" id="0" nodename="ShellExecute (Windows)" systemname="ShellExecute (Windows)">
+   <BOUNDS height="100" left="1755" top="2640" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="File" visible="1">
+   </PIN>
+   <PIN pinname="Do Execute" visible="1">
+   </PIN>
+   <PIN pinname="Show Window" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Block until finished" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Commandline Arguments" slicecount="1" values="||" encoded="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="1">
+   <BOUNDS type="Node" left="1065" top="1065" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1065" top="1065" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values=".\do.sh" encoded="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output String" dstnodeid="0" dstpinname="File">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="2">
+   <BOUNDS type="Node" left="2625" top="825" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2625" top="825" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Do Execute">
+   </LINK>
+   </PATCH>
