@@ -1,9 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta26.dtd" >
-   <PATCH nodename="C:\_github\vvvv-patches\git.v4p" filename="C:\_github\vvvv-patches\git.v4p" systemname="git" locked="0">
-   <BOUNDS height="1290" left="1770" top="2850" type="Window" width="7425">
+   <PATCH nodename="C:\_github\vvvv-patches\git.v4p" filename="C:\_github\vvvv-patches\git.v4p" locked="0" systemname="git">
+   <BOUNDS height="1290" left="10215" top="1755" type="Window" width="7425">
    </BOUNDS>
-   <NODE componentmode="Hidden" id="0" nodename="ShellExecute (Windows)" systemname="ShellExecute (Windows)" hiddenwhenlocked="1">
-   <BOUNDS height="100" left="945" top="2445" type="Node" width="100">
+   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="0" nodename="ShellExecute (Windows)" systemname="ShellExecute (Windows)">
+   <BOUNDS height="100" left="45" top="2445" type="Node" width="100">
    </BOUNDS>
    <PIN pinname="File" visible="1">
    </PIN>
@@ -18,10 +18,10 @@
    <PIN pinname="Result" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <NODE componentmode="InABox" id="1" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="1">
-   <BOUNDS height="100" left="165" top="1260" type="Node" width="100">
+   <NODE componentmode="InABox" hiddenwhenlocked="1" id="1" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="100" left="8430" top="1590" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS height="255" left="165" top="1260" type="Box" width="960">
+   <BOUNDS height="255" left="8430" top="1590" type="Box" width="960">
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -30,12 +30,12 @@
    <PIN pinname="Pin Visibility" slicecount="1" values="False">
    </PIN>
    </NODE>
-   <LINK dstnodeid="0" dstpinname="File" srcnodeid="1" srcpinname="Output String" hiddenwhenlocked="1">
+   <LINK dstnodeid="0" dstpinname="File" hiddenwhenlocked="1" srcnodeid="1" srcpinname="Output String">
    </LINK>
    <NODE componentmode="InABox" id="2" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="100" left="1800" top="165" type="Node" width="100">
+   <BOUNDS height="100" left="300" top="165" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS height="480" left="1800" top="165" type="Box" width="480">
+   <BOUNDS height="480" left="300" top="165" type="Box" width="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -50,14 +50,14 @@
    <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Push">
    </PIN>
    </NODE>
-   <LINK dstnodeid="0" dstpinname="Do Execute" srcnodeid="2" srcpinname="Y Output Value" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="1830" y="1545">
+   <LINK dstnodeid="0" dstpinname="Do Execute" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="2" srcpinname="Y Output Value">
+   <LINKPOINT x="530" y="1545">
    </LINKPOINT>
-   <LINKPOINT x="1905" y="1545">
+   <LINKPOINT x="805" y="1545">
    </LINKPOINT>
    </LINK>
-   <NODE componentmode="Hidden" id="3" nodename="ShellExecute (Windows)" systemname="ShellExecute (Windows)" hiddenwhenlocked="1">
-   <BOUNDS height="100" left="2790" top="2445" type="Node" width="100">
+   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="3" nodename="ShellExecute (Windows)" systemname="ShellExecute (Windows)">
+   <BOUNDS height="100" left="1890" top="2445" type="Node" width="100">
    </BOUNDS>
    <PIN pinname="File" visible="1">
    </PIN>
@@ -73,9 +73,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="4" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="100" left="3735" top="165" type="Node" width="100">
+   <BOUNDS height="100" left="1635" top="165" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS height="480" left="3735" top="165" type="Box" width="480">
+   <BOUNDS height="480" left="1635" top="165" type="Box" width="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -85,17 +85,21 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
    </NODE>
-   <LINK dstnodeid="3" dstpinname="Do Execute" srcnodeid="4" srcpinname="Y Output Value" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="3765" y="1545">
+   <LINK dstnodeid="3" dstpinname="Do Execute" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="4" srcpinname="Y Output Value">
+   <LINKPOINT x="2065" y="1545">
    </LINKPOINT>
-   <LINKPOINT x="3765" y="1545">
+   <LINKPOINT x="2465" y="1545">
    </LINKPOINT>
    </LINK>
-   <LINK dstnodeid="3" dstpinname="File" srcnodeid="1" srcpinname="Output String" hiddenwhenlocked="1">
+   <LINK dstnodeid="3" dstpinname="File" hiddenwhenlocked="1" srcnodeid="1" srcpinname="Output String">
    </LINK>
-   <NODE componentmode="Hidden" id="6" nodename="ShellExecute (Windows)" systemname="ShellExecute (Windows)" hiddenwhenlocked="1">
-   <BOUNDS height="100" left="4395" top="2445" type="Node" width="100">
+   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="6" nodename="ShellExecute (Windows)" systemname="ShellExecute (Windows)">
+   <BOUNDS height="100" left="3495" top="2445" type="Node" width="100">
    </BOUNDS>
    <PIN pinname="File" visible="1">
    </PIN>
@@ -111,9 +115,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="5" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="100" left="5205" top="165" type="Node" width="100">
+   <BOUNDS height="100" left="3105" top="165" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS height="480" left="5205" top="165" type="Box" width="480">
+   <BOUNDS height="480" left="3105" top="165" type="Box" width="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -128,16 +132,16 @@
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK dstnodeid="6" dstpinname="Do Execute" srcnodeid="5" srcpinname="Y Output Value" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="5235" y="1545">
+   <LINK dstnodeid="6" dstpinname="Do Execute" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="5" srcpinname="Y Output Value">
+   <LINKPOINT x="3535" y="1545">
    </LINKPOINT>
-   <LINKPOINT x="5355" y="1545">
+   <LINKPOINT x="4055" y="1545">
    </LINKPOINT>
    </LINK>
-   <LINK dstnodeid="6" dstpinname="File" srcnodeid="1" srcpinname="Output String" hiddenwhenlocked="1">
+   <LINK dstnodeid="6" dstpinname="File" hiddenwhenlocked="1" srcnodeid="1" srcpinname="Output String">
    </LINK>
-   <NODE componentmode="Hidden" id="8" nodename="ShellExecute (Windows)" systemname="ShellExecute (Windows)" hiddenwhenlocked="1">
-   <BOUNDS height="100" left="5835" top="2445" type="Node" width="100">
+   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="8" nodename="ShellExecute (Windows)" systemname="ShellExecute (Windows)">
+   <BOUNDS height="100" left="4935" top="2445" type="Node" width="100">
    </BOUNDS>
    <PIN pinname="File" visible="1">
    </PIN>
@@ -153,9 +157,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="7" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="100" left="6630" top="165" type="Node" width="100">
+   <BOUNDS height="100" left="4530" top="165" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS height="480" left="6630" top="165" type="Box" width="480">
+   <BOUNDS height="480" left="4530" top="165" type="Box" width="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -168,16 +172,16 @@
    <PIN pinname="Pin Visibility" slicecount="1" values="Hidden">
    </PIN>
    </NODE>
-   <LINK dstnodeid="8" dstpinname="Do Execute" srcnodeid="7" srcpinname="Y Output Value" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="6660" y="1545">
+   <LINK dstnodeid="8" dstpinname="Do Execute" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="7" srcpinname="Y Output Value">
+   <LINKPOINT x="4960" y="1545">
    </LINKPOINT>
-   <LINKPOINT x="6795" y="1545">
+   <LINKPOINT x="5495" y="1545">
    </LINKPOINT>
    </LINK>
-   <LINK dstnodeid="8" dstpinname="File" srcnodeid="1" srcpinname="Output String" hiddenwhenlocked="1">
+   <LINK dstnodeid="8" dstpinname="File" hiddenwhenlocked="1" srcnodeid="1" srcpinname="Output String">
    </LINK>
-   <NODE componentmode="Hidden" id="12" nodename="ShellExecute (Windows)" systemname="ShellExecute (Windows)" hiddenwhenlocked="1">
-   <BOUNDS height="100" left="7410" top="2445" type="Node" width="100">
+   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="12" nodename="ShellExecute (Windows)" systemname="ShellExecute (Windows)">
+   <BOUNDS height="100" left="6510" top="2445" type="Node" width="100">
    </BOUNDS>
    <PIN pinname="File" visible="1">
    </PIN>
@@ -193,9 +197,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="11" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="100" left="7995" top="165" type="Node" width="100">
+   <BOUNDS height="100" left="5895" top="165" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS height="480" left="7995" top="165" type="Box" width="480">
+   <BOUNDS height="480" left="5895" top="165" type="Box" width="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -212,12 +216,12 @@
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK dstnodeid="12" dstpinname="Do Execute" srcnodeid="11" srcpinname="Y Output Value" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="8025" y="1545">
+   <LINK dstnodeid="12" dstpinname="Do Execute" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="11" srcpinname="Y Output Value">
+   <LINKPOINT x="6325" y="1545">
    </LINKPOINT>
-   <LINKPOINT x="8370" y="1545">
+   <LINKPOINT x="7070" y="1545">
    </LINKPOINT>
    </LINK>
-   <LINK dstnodeid="12" dstpinname="File" srcnodeid="1" srcpinname="Output String" hiddenwhenlocked="1">
+   <LINK dstnodeid="12" dstpinname="File" hiddenwhenlocked="1" srcnodeid="1" srcpinname="Output String">
    </LINK>
    </PATCH>
