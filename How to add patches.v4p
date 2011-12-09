@@ -289,7 +289,7 @@
    <NODE componentmode="InABox" id="20" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="270" left="45" top="16440" type="Node" width="1320">
    </BOUNDS>
-   <BOUNDS height="900" left="45" top="16440" type="Box" width="3915">
+   <BOUNDS height="855" left="45" top="16440" type="Box" width="5565">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|3 - git remote add upstream git://github.com/octocat/Spoon-Knife.git|">
    </PIN>
@@ -1042,6 +1042,24 @@
    <BOUNDS height="270" left="15" top="720" type="Box" width="345">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="Hi!">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="git" filename="git.v4p" nodename="git.v4p" componentmode="Hidden" id="83">
+   <BOUNDS type="Node" left="6855" top="15870" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="86" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="5520" top="15495" width="3690" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5520" top="15495" width="3690" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|This patch seems to work as a wrapper aroung git|" encoded="0">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
