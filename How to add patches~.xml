@@ -1,11 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta26.dtd" >
-   <PATCH nodename="C:\_github\vvvv-patches\How to add patches.v4p" bgcolor="15132390" filename="C:\_github\vvvv-patches\How to add patches.v4p" systemname="How to add patches">
+   <PATCH nodename="C:\_github\vvvv-patches\How to add patches.v4p" bgcolor="11842740" filename="C:\_github\vvvv-patches\How to add patches.v4p" systemname="How to add patches">
    <BOUNDS height="12000" left="0" top="0" type="Window" width="9750">
    </BOUNDS>
    <NODE componentmode="InABox" id="0" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="315" top="300" type="Node" width="1530">
+   <BOUNDS height="270" left="15" top="15" type="Node" width="1530">
    </BOUNDS>
-   <BOUNDS height="510" left="315" top="300" type="Box" width="3780">
+   <BOUNDS height="510" left="15" top="15" type="Box" width="3780">
    </BOUNDS>
    <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|How to add patches|">
    </PIN>
@@ -73,11 +73,11 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="10" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="0" top="10125" type="Node" width="1875">
+   <BOUNDS height="270" left="15" top="11145" type="Node" width="1875">
    </BOUNDS>
-   <BOUNDS height="1470" left="0" top="10125" type="Box" width="9510">
+   <BOUNDS height="420" left="15" top="11145" type="Box" width="9465">
    </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="3" visible="0" values="|1 - fork the vvvv-sdk repo|,|go to https://github.com/vvvv/vvvv-sdk|,|and fork it !|">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|1 - fork the vvvv-sdk repo|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -91,7 +91,7 @@
    </PIN>
    <PIN pinname="Columns" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Rows" slicecount="1" values="3">
+   <PIN pinname="Rows" slicecount="1" values="1">
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
@@ -101,9 +101,9 @@
    <NODE componentmode="InABox" id="11" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="270" left="0" top="3765" type="Node" width="1335">
    </BOUNDS>
-   <BOUNDS height="990" left="0" top="3765" type="Box" width="9510">
+   <BOUNDS height="435" left="0" top="3765" type="Box" width="9510">
    </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="2" visible="0" values="|0 bis - install git|,|get it from here ...|">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|0 bis - install git|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -117,7 +117,7 @@
    </PIN>
    <PIN pinname="Columns" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Rows" slicecount="1" values="2">
+   <PIN pinname="Rows" slicecount="1" values="1">
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
@@ -501,9 +501,9 @@
    <LINK dstnodeid="44" dstpinname="Texture" hiddenwhenlocked="1" srcnodeid="43" srcpinname="Texture Out">
    </LINK>
    <NODE componentmode="InABox" hiddenwhenlocked="1" id="42" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
-   <BOUNDS height="100" left="195" top="4950" type="Node" width="100">
+   <BOUNDS height="100" left="375" top="4950" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS height="4560" left="195" top="4950" type="Box" width="5790">
+   <BOUNDS height="4560" left="375" top="4950" type="Box" width="5790">
    </BOUNDS>
    <BOUNDS height="4860" left="10395" top="9225" type="Window" width="6120">
    </BOUNDS>
@@ -569,9 +569,9 @@
    <LINK dstnodeid="41" dstpinname="Aspect Height" hiddenwhenlocked="1" srcnodeid="42" srcpinname="Actual Backbuffer Height">
    </LINK>
    <NODE componentmode="InABox" hiddenwhenlocked="1" id="40" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="100" left="10815" top="6525" type="Node" width="100">
+   <BOUNDS height="100" left="10845" top="6450" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS height="270" left="10815" top="6525" type="Box" width="2100">
+   <BOUNDS height="270" left="10845" top="6450" type="Box" width="2100">
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -659,11 +659,13 @@
    <LINK dstnodeid="36" dstpinname="Input" hiddenwhenlocked="1" srcnodeid="43" srcpinname="Original Height">
    </LINK>
    <NODE systemname="Kalle (VVVV)" nodename="Kalle (VVVV)" componentmode="Hidden" id="45">
-   <BOUNDS type="Node" left="8025" top="3330" width="100" height="100">
+   <BOUNDS type="Node" left="450" top="720" width="100" height="100">
    </BOUNDS>
+   <PIN pinname="Background Kalle" visible="1" pintype="Input" slicecount="1" values="|0.70672,0.70672,0.70672,0.00000|">
+   </PIN>
    </NODE>
    <NODE systemname="ShellExecute (Windows)" nodename="ShellExecute (Windows)" componentmode="Hidden" id="46" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="11130" top="4650" width="100" height="100">
+   <BOUNDS type="Node" left="10740" top="4485" width="100" height="100">
    </BOUNDS>
    <PIN pinname="File" visible="1">
    </PIN>
@@ -677,9 +679,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="47" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="11640" top="4305" width="100" height="100">
+   <BOUNDS type="Node" left="11250" top="4140" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="11640" top="4305" width="795" height="240">
+   <BOUNDS type="Box" left="11250" top="4140" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -724,24 +726,24 @@
    </NODE>
    <LINK srcnodeid="50" srcpinname="Output String" dstnodeid="46" dstpinname="Commandline Arguments" hiddenwhenlocked="1">
    </LINK>
-   <NODE systemname="ShellExecute (Windows)" nodename="ShellExecute (Windows)" componentmode="Hidden" id="52" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="10980" top="5940" width="100" height="100">
+   <NODE systemname="ShellExecute (Windows)" nodename="ShellExecute (Windows)" componentmode="Hidden" id="65" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="13485" top="10980" width="100" height="100">
    </BOUNDS>
    <PIN pinname="File" visible="1">
    </PIN>
-   <PIN pinname="Do Execute" visible="1" slicecount="1" values="0">
+   <PIN pinname="Do Execute" visible="1">
    </PIN>
-   <PIN pinname="Commandline Arguments" visible="1" slicecount="1" values="||" encoded="0">
+   <PIN pinname="Commandline Arguments" visible="1">
    </PIN>
    <PIN pinname="Show Window" visible="-1" pintype="Input" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Block until finished" visible="-1" pintype="Input" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="51" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="11490" top="5595" width="100" height="100">
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="64" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="13995" top="10635" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="11490" top="5595" width="795" height="240">
+   <BOUNDS type="Box" left="13995" top="10635" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -750,6 +752,308 @@
    <PIN pinname="Pin Visibility" slicecount="1" values="False">
    </PIN>
    </NODE>
-   <LINK srcnodeid="51" srcpinname="Output String" dstnodeid="52" dstpinname="File" hiddenwhenlocked="1">
+   <LINK srcnodeid="64" srcpinname="Output String" dstnodeid="65" dstpinname="File" hiddenwhenlocked="1">
    </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="63" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="915" top="11610" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="915" top="11610" width="480" height="435">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="-1" pintype="Input" values="0">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="65" dstpinname="Do Execute" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="62" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="1425" top="11625" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1425" top="11625" width="4155" height="405">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" encoded="0" values="https://github.com/vvvv/vvvv-sdk">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="62" srcpinname="Output String" dstnodeid="65" dstpinname="Commandline Arguments" hiddenwhenlocked="1">
+   </LINK>
+   <NODE componentmode="InABox" id="72" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="15" top="3195" type="Node" width="1335">
+   </BOUNDS>
+   <BOUNDS height="390" left="15" top="3195" type="Box" width="975">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|go to |">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Character Encoding" slicecount="1" values="UTF8">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
+   </NODE>
+   <NODE systemname="ShellExecute (Windows)" nodename="ShellExecute (Windows)" componentmode="Hidden" id="71" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="10845" top="3465" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="File" visible="1">
+   </PIN>
+   <PIN pinname="Do Execute" visible="1">
+   </PIN>
+   <PIN pinname="Commandline Arguments" visible="1">
+   </PIN>
+   <PIN pinname="Show Window" visible="-1" pintype="Input" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Block until finished" visible="-1" pintype="Input" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="70" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="11355" top="3120" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11355" top="3120" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" visible="-1" pintype="Input" encoded="0" values="C:\_github\vvvv-patches\go.bat">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="70" srcpinname="Output String" dstnodeid="71" dstpinname="File" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="69" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="1080" top="3180" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1080" top="3180" width="480" height="435">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="-1" pintype="Input" values="0">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="69" srcpinname="Y Output Value" dstnodeid="71" dstpinname="Do Execute" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="68" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="1605" top="3180" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1605" top="3180" width="2400" height="375">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" encoded="0" values="https://github.com">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="68" srcpinname="Output String" dstnodeid="71" dstpinname="Commandline Arguments" hiddenwhenlocked="1">
+   </LINK>
+   <NODE componentmode="InABox" id="74" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="45" top="4260" type="Node" width="1335">
+   </BOUNDS>
+   <BOUNDS height="435" left="45" top="4260" type="Box" width="2205">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|get it from here|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Character Encoding" slicecount="1" values="UTF8">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="75" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="90" top="9960" type="Node" width="1335">
+   </BOUNDS>
+   <BOUNDS height="495" left="90" top="9960" type="Box" width="3705">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|follow instructions from here:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Character Encoding" slicecount="1" values="UTF8">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
+   </NODE>
+   <NODE systemname="ShellExecute (Windows)" nodename="ShellExecute (Windows)" componentmode="Hidden" id="79" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="13530" top="10185" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="File" visible="1">
+   </PIN>
+   <PIN pinname="Do Execute" visible="1">
+   </PIN>
+   <PIN pinname="Commandline Arguments" visible="1">
+   </PIN>
+   <PIN pinname="Show Window" visible="-1" pintype="Input" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Block until finished" visible="-1" pintype="Input" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="78" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="14040" top="9840" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="14040" top="9840" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" visible="-1" pintype="Input" encoded="0" values="C:\_github\vvvv-patches\go.bat">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="78" srcpinname="Output String" dstnodeid="79" dstpinname="File" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="77" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="3900" top="9975" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3900" top="9975" width="480" height="435">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="-1" pintype="Input" values="0">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="77" srcpinname="Y Output Value" dstnodeid="79" dstpinname="Do Execute" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="76" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="4425" top="9975" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4425" top="9975" width="4950" height="375">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" encoded="0" values="http://help.github.com/win-set-up-git/">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="76" srcpinname="Output String" dstnodeid="79" dstpinname="Commandline Arguments" hiddenwhenlocked="1">
+   </LINK>
+   <NODE componentmode="InABox" id="80" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="30" top="11595" type="Node" width="1875">
+   </BOUNDS>
+   <BOUNDS height="420" left="30" top="11595" type="Box" width="840">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|go to|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Character Encoding" slicecount="1" values="UTF8">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="81" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="5655" top="11610" type="Node" width="1875">
+   </BOUNDS>
+   <BOUNDS height="435" left="5655" top="11610" type="Box" width="1650">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|and fork it !|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Character Encoding" slicecount="1" values="UTF8">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="82" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="15" top="720" width="345" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="15" top="720" width="345" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="Hi!" encoded="0">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>
